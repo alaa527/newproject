@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+ 
+    </head>
+    <body>
+
+<div class="container py-3">
+    
+    <div class="form-group">
+<label  style="font-weight: 700; color:indigo">Product Name</label>
+<input id="ProductName" style="border-radius: 15px; box-shadow: 2px 2px 10px gray;" class="form-control" placeholder="product name">  </div>
+
+    <div class="form-group">
+     <label  style="font-weight: 700; color:indigo">Product Price</label>
+    <input id="ProductPrice" style="border-radius: 15px; box-shadow: 2px 2px 10px gray;" class="form-control" placeholder="product price">  </div>
+   
+    <div class="form-group">
+    <label  style="font-weight: 700; color:indigo">Product Category</label>
+        <input id="ProductCategory" style="border-radius: 15px;box-shadow: 2px 2px 10px gray;" class="form-control" placeholder="product Category">  </div>
+      
+        <div class="form-group">
+             <label  style="font-weight: 700; color:indigo">Product Description</label>
+            <textarea id="ProductDescription" style="border-radius: 15px; box-shadow: 2px 2px 10px gray;" class="form-control" >  </textarea></div>
+<button id="mainbtn" class="btn"  style="font-weight: 700; background-color:indigo; color:white"  onclick="Add()"> Add Product </button>
+        </div>
+<!-- this-> كاني بشاور علي الايليمنت كله اللي انا فيه  -->
+<!-- هي هي لو عملت getelementbyid وعملت id -->
+<!-- this.value كاني ببعت للفانكشن دي الفاليو بتاعتي كباراميتر -->
+<input onkeyup="Searchproduct(this.value)" class="form-control w-50 m-auto" style="border-radius: 15px; box-shadow: 3px 3px 10px gray;" placeholder="Search product ">
+<div class="container">
+<table class="table my-3"  style="background-color: lavender;">
+    <thead  style="color:indigo; background-color: lavender;">
+        <th>index</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Description</th>
+        <th>Delete item</th>
+        <th>Update item</th>
+    </thead>
+    <tbody id="tabledata">
+  
+    </tbody>
+</table> </div>
+     <script src="js/jquery-3.5.1.slim.min.js"></script>
+     <script src="js/popper.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+      <script src="js/mine.js"></script>
+    </body>
+</html>
